@@ -1,0 +1,12 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAC_B.Views.QRCodePage">
+    <StackLayout Padding="20">
+        <Label Text="User Image" FontSize="Medium" HorizontalOptions="Center" />
+        <Image x:Name="userImage" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" />
+        
+        <Label Text="QR Code" FontSize="Large" HorizontalOptions="Center" />
+        <Image x:Name="qrCodeImage" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" />
+    </StackLayout>
+</ContentPage>
+

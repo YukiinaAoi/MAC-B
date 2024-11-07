@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAC_B.Views.AdminPage"
+             Title="Admin Page">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="20">
+            <Label Text="Welcome, Admin!" 
+                   FontSize="24"
+                   HorizontalOptions="Center" 
+                   VerticalOptions="CenterAndExpand" 
+                   FontAttributes="Bold" />
+
+            <Button Text="Open QR Code Scanner"
+                    Clicked="OnQrScannerClicked"
+                    HorizontalOptions="Center" 
+                    VerticalOptions="CenterAndExpand" 
+                    BackgroundColor="LightBlue" 
+                    TextColor="White" 
+                    Padding="10" 
+                    FontSize="16" />
+
+            <Label Text="Scanned QR History" 
+                   FontSize="20" 
+                   Padding="10" 
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold" />
+
+            <ListView x:Name="qrHistoryListView" 
+                      HasUnevenRows="True"
+                      SeparatorColor="LightGray"
+                      BackgroundColor="WhiteSmoke">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10" Orientation="Horizontal" Spacing="15">
+                                <Label Text="{Binding QRCodeData}" 
+                                       FontSize="16" 
+                                       HorizontalOptions="StartAndExpand"
+                                       LineBreakMode="WordWrap" />
+
+                                <Label Text="{Binding Timestamp}" 
+                                       FontSize="14" 
+                                       HorizontalOptions="End"
+                                       TextColor="Gray" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

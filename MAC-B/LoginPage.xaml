@@ -1,0 +1,24 @@
+<!-- LoginPage.xaml -->
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAC_B.Views.LoginPage">
+
+    <StackLayout Padding="20">
+        <Label Text="Login" FontSize="30" HorizontalOptions="Center" />
+        <Entry x:Name="usernameEntry" Placeholder="Username" />
+        <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True" />
+        <Button Text="Login" Clicked="OnLoginClicked" />
+        <Label x:Name="resultLabel" Text="" TextColor="Red" />
+
+        <!-- Sign Up Label -->
+        <Label Text="Don't have an account? Sign Up"
+               FontSize="14"
+               TextColor="Blue"
+               HorizontalOptions="Center"
+               VerticalOptions="EndAndExpand">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnSignUpTapped" />
+            </Label.GestureRecognizers>
+        </Label>
+    </StackLayout>
+</ContentPage>

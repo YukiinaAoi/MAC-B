@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI.Controls"
+             x:Class="MAC_B.Views.TestPage"
+             Title="QR Code Scanner">
+
+    <ContentPage.Content>
+        <!-- Full-screen layout for the scanner -->
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <!-- Barcode Scanner only -->
+            <controls:CameraBarcodeReaderView x:Name="barcodeReaderView" 
+                                              IsDetecting="True" 
+                                              IsVisible="True" 
+                                              HorizontalOptions="FillAndExpand" 
+                                              VerticalOptions="FillAndExpand"
+                                              BarcodesDetected="OnBarcodeDetected" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

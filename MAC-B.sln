@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAC-B", "MAC-B\MAC-B.csproj", "{A68A4466-F009-4BC4-89BC-F46240B291CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A68A4466-F009-4BC4-89BC-F46240B291CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A68A4466-F009-4BC4-89BC-F46240B291CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A68A4466-F009-4BC4-89BC-F46240B291CF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A68A4466-F009-4BC4-89BC-F46240B291CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A68A4466-F009-4BC4-89BC-F46240B291CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A68A4466-F009-4BC4-89BC-F46240B291CF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E863CE5-BF8A-415C-BCC5-52E7B24B3144}
+	EndGlobalSection
+EndGlobal

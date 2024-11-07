@@ -1,0 +1,25 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAC_B.Views.SignUpPage">
+
+    <StackLayout Padding="20">
+        <Label Text="Sign Up" FontSize="30" HorizontalOptions="Center" />
+
+        <Entry x:Name="usernameEntry" Placeholder="Username" />
+        <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True" />
+        <Entry x:Name="nameEntry" Placeholder="Name" />
+        <Entry x:Name="idEntry" Placeholder="ID Number" />
+
+        <!-- Button to select an image -->
+        <Button Text="Select Image" Clicked="OnSelectImageClicked" />
+
+        <!-- Label to display the selected image info -->
+        <Label x:Name="imagePathLabel" Text="No image selected" TextColor="Gray" />
+
+        <!-- Image control to display the selected image -->
+        <Image x:Name="selectedImage" HeightRequest="200" HorizontalOptions="Center" />
+
+        <Button Text="Sign Up" Clicked="OnSignUpClicked" />
+        <Label x:Name="resultLabel" Text="" TextColor="Red" />
+    </StackLayout>
+</ContentPage>
